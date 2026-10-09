@@ -1,0 +1,614 @@
+/* ===== TOP UTILITY BAR ===== */
+.topBar {
+  background: #2d1054;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 6px 30px;
+  font-size: 12px;
+  gap: 4px;
+}
+
+.topBarLink {
+  color: #fff;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.topBarLink:last-child {
+  border-right: none;
+}
+
+.topBarLink:hover {
+  opacity: 0.8;
+}
+
+.topBarIcon {
+  font-size: 14px;
+}
+
+.fontSizeControls {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 6px;
+}
+
+.fontSizeBtn {
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.fontSizeBtn:hover {
+  opacity: 0.7;
+}
+
+.fontSizeBtnSmall {
+  font-size: 11px;
+}
+
+.fontSizeBtnMedium {
+  font-size: 13px;
+}
+
+.fontSizeBtnLarge {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* ===== PERSONAL BANKING TAB ===== */
+.personalBankingTab {
+  position: absolute;
+  top: -2px;
+  left: 180px;
+  z-index: 10;
+}
+
+.personalBankingBtn {
+  background: var(--sbi-purple);
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 0 0 16px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.personalBankingBtn:hover {
+  background: var(--sbi-purple-dark);
+}
+
+/* ===== NAVIGATION BAR ===== */
+.navbar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  height: 60px;
+  border-bottom: 1px solid #e8e0f0;
+  position: relative;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+.logoYono {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--sbi-purple-dark);
+  letter-spacing: -0.5px;
+}
+
+.logoSbi {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.sbiIcon {
+  color: var(--sbi-purple);
+  font-size: 16px;
+}
+
+.sbiText {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--sbi-purple-dark);
+}
+
+.netBanking {
+  font-size: 9px;
+  color: var(--sbi-purple);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: -2px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 100%;
+}
+
+.navLink {
+  padding: 0 18px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.2s;
+  position: relative;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: var(--sbi-purple);
+}
+
+.navLinkActive {
+  color: var(--sbi-purple-dark);
+  font-weight: 600;
+}
+
+.navLinkActive::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 18px;
+  right: 18px;
+  height: 3px;
+  background: var(--sbi-purple);
+  border-radius: 2px 2px 0 0;
+}
+
+/* ===== HERO SECTION ===== */
+.heroSection {
+  display: flex;
+  min-height: calc(100vh - 100px);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroLeft {
+  flex: 1;
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 30%, #ce93d8 60%, #ba68c8 100%);
+  padding: 60px 50px 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.heroLeft::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.heroLeft::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  left: -40px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.helloText {
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--sbi-purple);
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.helloExclaim {
+  color: var(--sbi-purple-light);
+}
+
+.welcomeText {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.newUserTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--sbi-purple);
+  margin-bottom: 6px;
+}
+
+.newUserDesc {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 22px;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.registerBtn {
+  background: var(--sbi-purple);
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(81, 45, 168, 0.3);
+}
+
+.registerBtn:hover {
+  background: var(--sbi-purple-dark);
+  box-shadow: 0 6px 20px rgba(81, 45, 168, 0.4);
+  transform: translateY(-1px);
+}
+
+.activateBtn {
+  background: transparent;
+  color: var(--sbi-purple);
+  padding: 12px 32px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid var(--sbi-purple);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activateBtn:hover {
+  background: var(--sbi-purple);
+  color: #fff;
+}
+
+.openAccountText {
+  font-size: 13px;
+  color: #333;
+  margin-top: auto;
+}
+
+.openAccountLink {
+  color: var(--sbi-purple);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.openAccountLink:hover {
+  color: var(--sbi-purple-dark);
+}
+
+/* ===== LOGIN CARD ===== */
+.heroRight {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 40px;
+  background: #fafafa;
+  position: relative;
+}
+
+.heroRight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 120px;
+  background: linear-gradient(to right, #e1bee7 0%, transparent 100%);
+  opacity: 0.3;
+}
+
+.loginCard {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  padding: 35px 40px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  z-index: 2;
+}
+
+.loginTitle {
+  text-align: center;
+  font-size: 15px;
+  color: var(--sbi-purple);
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 0.3px;
+}
+
+.formGroup {
+  margin-bottom: 18px;
+}
+
+.inputWrapper {
+  position: relative;
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  transition: border-color 0.3s;
+}
+
+.inputWrapper:focus-within {
+  border-color: var(--sbi-purple);
+}
+
+.formInput {
+  width: 100%;
+  padding: 12px 2px;
+  border: none;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+}
+
+.formInput::placeholder {
+  color: #999;
+}
+
+.inputIcon {
+  color: #888;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.inputIcon:hover {
+  color: var(--sbi-purple);
+}
+
+.keyboardIcon {
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 32px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.keyboardIcon:hover {
+  border-color: var(--sbi-purple);
+  color: var(--sbi-purple);
+}
+
+.forgotLink {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--sbi-purple);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.forgotLink:hover {
+  color: var(--sbi-purple-dark);
+}
+
+/* ===== CAPTCHA ===== */
+.captchaSection {
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.captchaRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  justify-content: flex-end;
+}
+
+.captchaImage {
+  background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: #333;
+  font-family: 'Courier New', monospace;
+  user-select: none;
+  min-width: 130px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.captchaImage::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.15);
+  transform: rotate(-3deg);
+}
+
+.captchaImage::after {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  transform: rotate(2deg);
+}
+
+.captchaActions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.captchaBtn {
+  color: #888;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 2px;
+}
+
+.captchaBtn:hover {
+  color: var(--sbi-purple);
+}
+
+.captchaInput {
+  border-bottom: 2px solid #e0e0e0;
+  padding: 10px 2px;
+  font-size: 14px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  background: transparent;
+  transition: border-color 0.3s;
+}
+
+.captchaInput:focus {
+  border-color: var(--sbi-purple);
+}
+
+.captchaInput::placeholder {
+  color: #999;
+}
+
+/* ===== LOGIN BUTTON ===== */
+.loginBtn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--sbi-purple) 0%, var(--sbi-purple-dark) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(81, 45, 168, 0.3);
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.loginBtn:hover {
+  box-shadow: 0 6px 25px rgba(81, 45, 168, 0.45);
+  transform: translateY(-1px);
+}
+
+.loginBtn:active {
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .heroSection {
+    flex-direction: column;
+  }
+
+  .heroLeft {
+    padding: 40px 30px;
+  }
+
+  .heroRight {
+    padding: 30px 20px;
+  }
+
+  .helloText {
+    font-size: 52px;
+  }
+
+  .personalBankingTab {
+    left: 120px;
+  }
+
+  .navLink {
+    padding: 0 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .topBar {
+    padding: 4px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .navLinks {
+    overflow-x: auto;
+  }
+
+  .personalBankingTab {
+    left: 100px;
+  }
+
+  .helloText {
+    font-size: 42px;
+  }
+
+  .loginCard {
+    padding: 25px 20px;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
